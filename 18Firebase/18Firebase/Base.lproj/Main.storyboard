@@ -57,6 +57,9 @@
                                 <buttonConfiguration key="configuration" style="gray" title="회원가입">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onBtnJoin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKt-4K-g3g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1H-BN-cu1">
                                 <rect key="frame" x="117" y="509" width="182" height="40"/>

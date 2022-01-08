@@ -68,6 +68,32 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func onBtnJoin(_ sender: UIButton) {
+        if let textID = textfieldID.text, let textPW = textfieldPW.text {
+            if textID.count < 1 || textPW.count < 1 {
+            
+                print("아이디나 암호가 너무 짧습니다.")
+                return
+                
+            }
+            
+            Auth.auth().createUser(withEmail: textID, password: textPW) {
+                //후행클로저
+                authResult, error in
+                guard let user = authResult?.user, error != nil else {
+                    print(error?.localizedDescription)
+                    return
+                }
+                //회원가입 성공
+                print("\(String(describing: user.email)) 회원가입 성공함")
+                print("\(String(describing:user.uid)) 회원가입 성공함")
+            }
+    
+            } else {
+                print("아이디나 암호가 없습니다.")
+            }
+        }
+    }
+    
 
-}
 
