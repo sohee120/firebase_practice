@@ -54,6 +54,17 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func onBtnLogout(_ sender: UIButton) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            
+        }catch let signOutError as NSError {
+            print("SignOutError: %@", signOutError)
+        }
+        
+        updateUI()
+    }
     
     
     
