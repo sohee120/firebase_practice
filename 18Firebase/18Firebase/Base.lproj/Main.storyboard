@@ -68,6 +68,9 @@
                                 <buttonConfiguration key="configuration" style="gray" title="리스트뷰 Firestore">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Stl-hU-5ll" kind="show" id="btx-fS-4XH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buJ-h9-3A4">
                                 <rect key="frame" x="121" y="557" width="175" height="40"/>
@@ -97,7 +100,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="637.68115942028987" y="53.571428571428569"/>
+            <point key="canvasLocation" x="197" y="62"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="Xhu-fu-s6o">
+            <objects>
+                <viewController id="Stl-hU-5ll" customClass="ListViewController" customModule="_8Firebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="14c-f1-MhK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkt-jK-B9E">
+                                <rect key="frame" x="120" y="134" width="180" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="리스트 데이터 추가">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onBtnAdd:" destination="Stl-hU-5ll" eventType="touchUpInside" id="2we-ZO-5ml"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeG-KP-IBq">
+                                <rect key="frame" x="120" y="197" width="180" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="리스트 데이터 읽기">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onBtnRead:" destination="Stl-hU-5ll" eventType="touchUpInside" id="1eN-TH-TXW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="list data" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yEj-Db-KpB">
+                                <rect key="frame" x="20" y="273" width="374" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35182734290000001" green="0.56500696549999996" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6rF-NK-2dC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hmt-hs-TeE"/>
+                    <connections>
+                        <outlet property="textView" destination="yEj-Db-KpB" id="ycd-CS-z8w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUa-eq-oBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eld-2U-FYZ">
@@ -119,6 +173,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -14,6 +14,7 @@
 		0CA3A671278978730031C0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3A670278978730031C0CC /* Assets.xcassets */; };
 		0CA3A674278978730031C0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3A672278978730031C0CC /* LaunchScreen.storyboard */; };
 		0CA3A67C278981830031C0CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3A67B278981830031C0CC /* GoogleService-Info.plist */; };
+		0CE68141278C6EE2008D0B0E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE68140278C6EE2008D0B0E /* ListViewController.swift */; };
 		CDCD62657CB1384B3A59B937 /* Pods_18Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76F8F72C9C807F4F58FDC5D /* Pods_18Firebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		0CA3A673278978730031C0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CA3A675278978730031C0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CA3A67B278981830031C0CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CE68140278C6EE2008D0B0E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7E3A6DBFF87884D2B59DEEFC /* Pods-18Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-18Firebase.debug.xcconfig"; path = "Target Support Files/Pods-18Firebase/Pods-18Firebase.debug.xcconfig"; sourceTree = "<group>"; };
 		C07E82EF339D04B5840F8FED /* Pods-18Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-18Firebase.release.xcconfig"; path = "Target Support Files/Pods-18Firebase/Pods-18Firebase.release.xcconfig"; sourceTree = "<group>"; };
 		C76F8F72C9C807F4F58FDC5D /* Pods_18Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_18Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				0CA3A669278978720031C0CC /* SceneDelegate.swift */,
 				0CA3A66B278978720031C0CC /* ViewController.swift */,
 				0CA3A66D278978720031C0CC /* Main.storyboard */,
+				0CE68140278C6EE2008D0B0E /* ListViewController.swift */,
 				0CA3A670278978730031C0CC /* Assets.xcassets */,
 				0CA3A672278978730031C0CC /* LaunchScreen.storyboard */,
 				0CA3A675278978730031C0CC /* Info.plist */,
@@ -212,6 +215,7 @@
 			files = (
 				0CA3A66C278978720031C0CC /* ViewController.swift in Sources */,
 				0CA3A668278978720031C0CC /* AppDelegate.swift in Sources */,
+				0CE68141278C6EE2008D0B0E /* ListViewController.swift in Sources */,
 				0CA3A66A278978720031C0CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
