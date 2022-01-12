@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C559809278F1274000E16DB /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C559808278F1274000E16DB /* UploadViewController.swift */; };
 		0CA3A668278978720031C0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3A667278978720031C0CC /* AppDelegate.swift */; };
 		0CA3A66A278978720031C0CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3A669278978720031C0CC /* SceneDelegate.swift */; };
 		0CA3A66C278978720031C0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3A66B278978720031C0CC /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C559808278F1274000E16DB /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		0CA3A664278978720031C0CC /* 18Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 18Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA3A667278978720031C0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CA3A669278978720031C0CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				0CA3A669278978720031C0CC /* SceneDelegate.swift */,
 				0CA3A66B278978720031C0CC /* ViewController.swift */,
 				0CA3A66D278978720031C0CC /* Main.storyboard */,
+				0C559808278F1274000E16DB /* UploadViewController.swift */,
 				0CE68140278C6EE2008D0B0E /* ListViewController.swift */,
 				0CA3A670278978730031C0CC /* Assets.xcassets */,
 				0CA3A672278978730031C0CC /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CA3A66C278978720031C0CC /* ViewController.swift in Sources */,
+				0C559809278F1274000E16DB /* UploadViewController.swift in Sources */,
 				0CA3A668278978720031C0CC /* AppDelegate.swift in Sources */,
 				0CE68141278C6EE2008D0B0E /* ListViewController.swift in Sources */,
 				0CA3A66A278978720031C0CC /* SceneDelegate.swift in Sources */,

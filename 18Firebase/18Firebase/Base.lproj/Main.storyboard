@@ -79,6 +79,9 @@
                                 <buttonConfiguration key="configuration" style="gray" title="이미지파일 업로드">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6Sm-Yf-v9f" kind="show" id="LXl-td-YW4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="로그인상태 :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXj-el-IXg">
                                 <rect key="frame" x="20" y="88" width="374" height="26"/>
@@ -153,6 +156,52 @@
             </objects>
             <point key="canvasLocation" x="864" y="62"/>
         </scene>
+        <!--Upload View Controller-->
+        <scene sceneID="RhI-uY-tSB">
+            <objects>
+                <viewController id="6Sm-Yf-v9f" customClass="UploadViewController" customModule="_8Firebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k9Z-SC-I9G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="bUa-DU-AUU">
+                                <rect key="frame" x="41" y="111" width="332" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.79462278580000001" green="0.69636694060000004" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="So8-qF-bsh">
+                                <rect key="frame" x="117" y="428" width="180" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="이미지 업로드 하기">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onBtnUpload:" destination="6Sm-Yf-v9f" eventType="touchUpInside" id="wr2-uw-g5C"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="다운로드 URL" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="acY-Xg-D62">
+                                <rect key="frame" x="41" y="501" width="332" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86087566609999999" green="0.75342640220000001" blue="0.82821711050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fWn-SX-eyi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="250-9J-gEA"/>
+                    <connections>
+                        <outlet property="imageView" destination="bUa-DU-AUU" id="WDJ-oJ-vdv"/>
+                        <outlet property="textView" destination="acY-Xg-D62" id="Szq-oO-wzF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01V-xa-f0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524.6376811594205" y="61.607142857142854"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eld-2U-FYZ">
             <objects>
@@ -173,6 +222,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image1" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
